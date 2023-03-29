@@ -7,7 +7,10 @@ html {
   box-sizing: border-box;
 
 }
-*, *:before, *:after {
+
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -26,8 +29,69 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- .container {
+.container {
   background-color: #f4f1ec;
-  width: 90%; 
-  margin: 0 auto; 
- }
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.tweet-content {
+  border: 2px solid black;
+  margin: 2em;
+
+}
+
+.tweet-content:hover {
+  box-shadow: 10px 20px 3px #545149;
+}
+
+.tweetbox-header {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5%;
+}
+
+.tweetbox {
+  display: flex;
+  border-bottom: 2px solid black;
+  margin-bottom: 10px;
+  width: 90%;
+  margin: 10px auto 0;
+
+}
+
+.tweetbox > p {
+  font-weight: 600;
+}
+
+.icons-container {
+  display: flex;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 40px;
+}
+
+.footer-container p {
+  padding: 0 5px;
+}
+
+.footer-container .icons-container {
+  padding: 10px;
+}
+
+.footer-container .icons-container i {
+  padding: 5px;
+  color: #4070c4;
+}
+
+.footer-container .icons-container i:hover {
+  color: #eda532;
+}
+
+.days-constiner {
+  margin-left: 15%;
+}
