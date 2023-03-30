@@ -27,6 +27,7 @@
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
@@ -61,7 +62,13 @@
 
 
     <section class="new-tweet">
-      <h2>Compose Tweet</h2>
+      <div class="error-section">
+        <img class="error-img" src="https://i.imgur.com/GnyDvKN.png" alt="">
+        <h3 class="error-msg">Error Message!</h3>
+        <img class="error-img" src="https://i.imgur.com/GnyDvKN.png" alt="">
+
+      </div>
+      <!-- <h3 class="error"> <span class="error-img"><img src="https://i.imgur.com/GnyDvKN.png" alt=""></span>  Error Message!  <span class="error-img"><img src="https://i.imgur.com/GnyDvKN.png" alt=""></span></h3>      -->
       <form id="tweet-form" action="/tweets" method="POST">
         <label for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
@@ -73,36 +80,6 @@
     </section>
 
     <section class="tweet-container">
-      <div class="tweet-content">
-        <div class="tweetbox-header">
-
-          <h4 class="logo"><i class="fa-solid fa-circle-user" style="color: #467ddd;"></i> <span class="user-name"> Name</span></h4>
-          <h4>Header @tag</h4>
-        </div>
-
-        <article class="tweetbox">
-
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam aliquam eius non veritatis consequatur
-            sapiente nostrum distinctio! Veritatis animi accusantium dolore, non autem blanditiis odit excepturi,
-            delectus magnam id nostrum?
-            Provids
-          <p>
-        </article>
-
-        <div class="footer-container">
-          <div class="days-container">
-            <p>days to go</p>
-          </div>
-          <div class="icons-container">
-            <i class="fa-solid fa-flag"></i>
-            <i class="fa-solid fa-repeat"></i>
-            <i class="fa-solid fa-heart"></i>
-          </div>
-
-        </div>
-      </div>
-
-      
     </section>
 
   </main>

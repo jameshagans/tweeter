@@ -39,6 +39,7 @@ body {
 .tweet-content {
   border: 2px solid black;
   margin: 2em;
+  border-radius: 15px;
 
 }
 
@@ -94,4 +95,22 @@ body {
 
 .days-constiner {
   margin-left: 15%;
+}
+
+.error-msg{
+  color: #D8000C;
+}
+
+.error-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    border: 5px solid #D8000C;
+    margin-top: 5px;
+
+}
+
+.error-img {
+  width: 20px;
+  height: 20px;
 }
