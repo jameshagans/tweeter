@@ -47,6 +47,15 @@ body {
   box-shadow: 10px 20px 3px #545149;
 }
 
+#tweet-text {
+  line-height: 0.5;
+}
+
+#tweet-form label {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
 .tweetbox-header {
   display: flex;
   justify-content: space-between;
@@ -62,7 +71,7 @@ body {
 
 }
 
-.tweetbox > p {
+.tweetbox>p {
   font-weight: 600;
 }
 
@@ -97,7 +106,7 @@ body {
   margin-left: 15%;
 }
 
-.error-msg{
+.error-msg {
   color: #D8000C;
 }
 
@@ -105,12 +114,47 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-    border: 5px solid #D8000C;
-    margin-top: 5px;
+  border: 5px solid #D8000C;
+  margin-top: 5px;
 
 }
 
 .error-img {
   width: 20px;
   height: 20px;
+}
+
+
+/* // laptop and above layout */
+@media only screen and (min-width: 1210px) {
+  .container {
+    width: 67%;
+    margin-right: 25px;
+    margin-top: 15%;
+    float: right;
+  }
+
+  .user-name {
+    margin-bottom: 130px;
+    margin-top: 0px;
+  }
+
+  header {
+    background-color: #BFA95E;
+    display: flex;
+    margin-left: 5%;
+    margin-top: 15%;
+    color: #FFFFFF;
+    height: 30vh;
+    width: 20vw;
+    float: left;
+    background-image: url("../images/az-subtle.png");
+    ;
+  }
+
+  body {
+    display: flex;
+    justify-content: space-between;
+  }
+
 }

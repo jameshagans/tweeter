@@ -27,7 +27,9 @@
 
   <!-- External JS -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js"
+    integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
   <!-- App JS -->
   <script type="text/javascript" src="/scripts/client.js"></script>
@@ -51,11 +53,9 @@
     </div>
     <br>
     <div>
-      <h2>Billy Bob</h2>
+      <h2 class="user-name">Billy Bob</h2>
     </div>
   </header>
-
-
 
   <!-- Page-specific (main) content here -->
   <main class="container">
@@ -68,7 +68,7 @@
         <img class="error-img" src="https://i.imgur.com/GnyDvKN.png" alt="">
 
       </div>
-      <!-- <h3 class="error"> <span class="error-img"><img src="https://i.imgur.com/GnyDvKN.png" alt=""></span>  Error Message!  <span class="error-img"><img src="https://i.imgur.com/GnyDvKN.png" alt=""></span></h3>      -->
+
       <form id="tweet-form" action="/tweets" method="POST">
         <label for="tweet-text">What are you humming about?</label>
         <textarea name="text" id="tweet-text"></textarea>
@@ -84,12 +84,4 @@
 
   </main>
 </body>
-
 </html>
-
-<!-- <nav>
-      <span id="tweeter">tweeter</span>
-      <span><strong>Write</strong> a new tweet</span>
-      <span><i class="fa-solid fa-angles-down" style="color: #e01010;"></i></span>
-      
-    </nav> -->
